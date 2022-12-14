@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/pageThree.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
       integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <style>
-      table {
-        margin-left: 100px;
-      }
-    </style>
+
     <title>Document</title>
   </head>
   <body>
@@ -34,7 +37,22 @@
       </thead>
       <tbody></tbody>
     </table>
+    <div class="modal">
+      <input type="text" class="nameInput" placeholder="Company Name" />
+      <input type="text" class="contactInput" placeholder="Contact Name" />
+      <button class="input-update">Update</button>
+    </div>
+    <div id="toasts">
+      <!-- <div class="toast success-toast">
+        <p class="message"></p>
+        <button class="cancel-button">X</button>
+      </div> -->
+    </div>
     <script src="../js/app.js"></script>
     <script src="../js/pageThree.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
   </body>
 </html>
